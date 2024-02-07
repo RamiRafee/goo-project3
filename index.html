@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page of Goo Business The best B2B Lead Generation Company</title>
+    <link rel="shortcut icon" href="./Goo Businesses (1).png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+    <div class="pogress" id="pogressID"></div>
+
+    <header>
+
+        <nav>
+            <div class="logo">
+                <img src="Goo Businesses (1).png" height="73px">
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/whyus">Why us?</a></li>
+            </ul>
+            <form class="form" action="/searching" method="post">
+                
+                <div class="search">
+                    <input class="form-ele1" type="text" id="searchbarID" name="seachbar" placeholder="Search here..."
+                        width="20vw">
+                </div>
+                <div class="btn">
+                    <button class="bttn" type="submit">Search</button>
+                </div>
+            </form>
+
+            <a href="/searching">
+                <div class="navallproduct">All Services</div>
+            </a>
+
+        </nav>
+
+        <a href="/freetrail" class="freeTrl bblink">Get Your<br>Free Trial<br>up to $30</a>
+    </header>
+
+    <main>
+
+        
+        <!-- Sidebar for Mail Categories -->
+        <aside id="sidebar">
+            <!-- Compose Email Button -->
+        <button id="compose-btn" onclick="openComposeDialog()">Compose Email</button>
+            <h2>Mail Categories</h2>
+            <br>
+            <ul>
+                <li>Inbox</li>
+                <li>Spam</li>
+                <li>Favorites</li>
+            </ul>
+        </aside>
+            <!-- List of emails will go here -->
+        <div id="email-list">
+            <!-- Display emails here -->
+        </div>
+        
+        
+           
+
+            
+
+        
+    </main>
+    <!-- Compose Email Modal -->
+    <div id="compose-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeComposeDialog()">&times;</span>
+            <h2>Compose Email</h2>
+
+            <!-- Compose Email Form -->
+        <form id="compose-form">
+            <label for="to">To:</label>
+            <input type="email" id="to" name="to" required>
+
+            <!-- CC and BCC fields -->
+            <label for="cc">CC:</label>
+            <input type="text" id="cc" name="cc">
+
+            <label for="bcc">BCC:</label>
+            <input type="text" id="bcc" name="bcc">
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <!-- Use contenteditable for a rich text editor -->
+            <textarea id="message" contenteditable="true" class="rich-text-editor" required></textarea>
+
+            <!-- Attachment Input -->
+            <label for="attachment">Attachment:</label>
+            
+            <input id="attachment" name="attachment" type="file">
+
+            <button type="submit">Send</button>
+        </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
